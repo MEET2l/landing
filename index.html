@@ -1433,3 +1433,14 @@ const observer = new IntersectionObserver(entries => {
 allSections.forEach(sec => observer.observe(sec));
 </script>
 
+
+<script>
+    const faqs = document.querySelectorAll('.faq-item');
+
+    faqs.forEach(item => {
+        item.querySelector('.faq-question').addEventListener('click', () => {
+            item.classList.toggle('active');
+        });
+    });
+</script>
+
